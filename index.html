@@ -1,72 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>huPo Art</title>
-	</head>
-	
-		<body style="background-color:#FFFFFF">
-		<center>
-		<div class="art">
-			<h2><u>FOR SCOTTIE</u></h2>
-			<img alt="Scotsman" src="pics/scotsman.png" width="800" border="2">
-			<p>
-			<strong>The national animal of the Scotland is an Unicorn.</strong>
-			</p>
-		</div>
-		<br />
-		<div class="art">
-			<h2><u>ALIEN ORGY</u></h2>
-			<img alt="Alien orgy" src="pics/muotokokoelma3.png" width="800" border="2">
-			<p>
-			<strong>Mmmm... Would love to join them... ;)</strong>
-			</p>
-		</div>
-		<br />
-		<div class="art">
-			<h2><u>SLEEPY SPACE MONSTERS</u></h2>
-			<img alt="Sleepy space monsters" src="pics/jokurutku.png" width="800" border="2">
-			<p>
-			<strong>I have to believe that somewhere in our vast universe, beings like this might exist.</strong>
-			</p>
-		</div>
-		<br />
-		<div class="art">
-			<h2><u>WIND POWER</u></h2>
-			<img alt="Penis Windmill" src="pics/penis_windmill.png" width="800" border="2">
-			<p>
-			<strong>Giving life to our plants.
-			</p>
-		</div>
-		<br />
-		<div class="art">
-			<h2><u>CARRY</u></h2>
-			<img alt="Carry" src="pics/bg6.png" width="800" border="2">
-			<p>
-			</p>
-		</div>
-		<br />
-		<div class="art">
-			<h2><u>RANDOM DOODLE #1</u></h2>
-			<img alt="Doodle" src="pics/selfie.png" width="800" border="2">
-			<p>
-			<strong>Not sure what inspired this, but I like it.</strong>
-			</p>
-		</div>
-		<br />
-		</center>
-	</body>
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="s.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>huPo Art</title>
+</head>
 
+<body>
+  <div id="wrap">
+    <img id="header" alt="Header" src="header.png" />
 
+    <div id="drawings">
+      <div class="drawing">
+        <h2>005</h2>
+        <img alt="Drawing" src="d/hupoart005.png">
+        <p>
+        </p>
+      </div>
 
+      <div class="drawing">
+        <h2>004</h2>
+        <img alt="Drawing" src="d/hupoart004.png">
+        <p>
+        </p>
+      </div>
 
+      <div class="drawing">
+        <h2>003</h2>
+        <img alt="Drawing" src="d/hupoart003.png">
+        <p>
+        </p>
+      </div>
 
+      <div class="drawing">
+        <h2>002</h2>
+        <img alt="Drawing" src="d/hupoart002.png">
+        <p>
+		</p>
+      </div>
 
+      <div class="drawing">
+        <h2>001</h2>
+        <img alt="Drawing" src="d/hupoart001.png">
+        <p>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="vi">
+    <img id="im" alt="Drawing" src="#" />
+  </div>
+  <script type="text/javascript">
+    var vi = document.getElementById("vi");
+    var im = document.getElementById("im");
+    var imgs = document.querySelectorAll(".drawing img");
 
+    var l = imgs.length;
+    for (var i = 0; i < l; i++) {
+      var img = imgs[i]
+      img.onclick = imageClicked
+    }
 
+    function imageClicked(e) {
+      vi.style.display = "flex";
+      im.src = this.getAttribute("src")
+    }
 
+    vi.onclick = function () {
+      vi.style.display = "none";
+    }
 
+    addEventListener("keydown", function (e) {
+      if (e.keyCode === 27) {
+        vi.style.display = "none"
+      }
+    }, false);
+  </script>
+</body>
 
 </html>
