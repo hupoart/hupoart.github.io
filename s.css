@@ -1,0 +1,198 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif, roboto, arial, "open sans", verdana;
+  font-size: 14px;
+  color: #333;
+}
+
+#wrap {
+  margin: 0 auto;
+  padding: 0 10px 35px;
+  max-width: 1280px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #178BD8;
+}
+
+a:visited {
+  color: #5C8AA8;
+}
+
+a:hover {
+  color: #C17304;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #F70;
+}
+
+h1 {
+  font-size: 13px;
+  font-style: italic;
+  text-align: center;
+  color: #555;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  padding: 0 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#drawings {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drawing {
+  margin: 35px auto 0;
+  max-width: 400px;
+}
+
+.ads {
+  margin: 35px auto 0;
+  max-width: 600px;
+}
+
+.drawing img {
+  cursor: pointer;
+}
+
+.drawing:after {
+  content: " ";
+  display: block;
+  width: 90%;
+  border: 9;
+  border-bottom: 1px dotted #AAA;
+  margin: 35px auto 0;
+  padding: 0;
+}
+
+#c {
+  margin-top: 35px;
+}
+
+.donate {
+  max-width: 600px;
+  width: 90%;
+  margin: 35px auto 0;
+  padding: 20px 0;
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+
+#vi {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  background: rgba(20, 20, 20, 0.75);
+  left: 0;
+  top: 0;
+  position: fixed;
+
+  -webkit-animation: fadein 400ms;
+  -moz-animation: fadein 400ms;
+  -ms-animation: fadein 400ms;
+  -o-animation: fadein 400ms;
+  animation: fadein 400ms;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#im {
+  display: block;
+  max-width: calc(100% - 30px);
+  max-height: calc(100% - 30px);
+  box-shadow: 0 0 35px 0 #000;
+  margin: 0 auto;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media all and (max-width: 850px) {
+  .drawing {
+    max-width: 100%;
+  }
+}
