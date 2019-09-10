@@ -76,6 +76,9 @@ p {
 
 .drawing img:hover {
  filter: brightness(100%);
+ -webkit-box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
+ -moz-box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
+ box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
 }
 
 .ads {
@@ -85,9 +88,9 @@ p {
 
 .drawing img {
   cursor: pointer;
-  -webkit-box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
-  box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 2x 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   filter: brightness(75%);
 }
 
