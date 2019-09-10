@@ -70,8 +70,12 @@ p {
 }
 
 .drawing {
-  margin: 35px auto 0;
+  margin: 35px 5px 0;
   max-width: 400px;
+}
+
+.drawing img:hover {
+ filter: brightness(100%);
 }
 
 .ads {
@@ -81,17 +85,12 @@ p {
 
 .drawing img {
   cursor: pointer;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
+  filter: brightness(75%);
 }
 
-.drawing:after {
-  content: " ";
-  display: block;
-  width: 90%;
-  border: 9;
-  border-bottom: 1px dotted #AAA;
-  margin: 35px auto 0;
-  padding: 0;
-}
 
 #c {
   margin-top: 35px;
